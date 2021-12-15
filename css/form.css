@@ -1,0 +1,195 @@
+/*.form {
+  width: 30vw;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  color: blue;
+  padding-top: 20px;
+  border: none;
+  background: rgb(236, 236, 236);
+  outline: none;
+}
+
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid blue;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: blue;
+}
+
+.form input:focus + .label-name::after, .form input:valid + .label-name::after {
+  transform: translateX(0%);
+}*/
+
+.form {
+  padding: 50px;
+  margin: 50px;
+  width: 50vw;
+  min-height: 50vh;
+  background: rgb(143, 181, 202);
+  border-radius: 10px;
+  box-shadow: 10px 10px rgba(3, 56, 78, 0.2);
+}
+
+form .user-details {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.input-box {
+  margin: 10px 0 10px 0;
+}
+
+.input-box input{
+  margin: 10px 0;
+  height: 45px;
+  width: 100%;
+  border: none;
+}
+
+.details {
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 0px;
+}
+
+textarea {
+  resize: none;
+  border: none;
+}
+
+.text-input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.btn-form {
+  margin: 2rem 0;
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  background: #262C37;
+  transition: 0.5s;
+}
+
+.btn-form:hover {
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.btn-form span {
+  display: block;
+  position: absolute;
+  background: #f9fd03;
+}
+
+.btn-form span:nth-child(1){
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.btn-form:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.btn-form span:nth-child(2){
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.btn-form:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.btn-form span:nth-child(3){
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btn-form:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btn-form span:nth-child(4){
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btn-form:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
