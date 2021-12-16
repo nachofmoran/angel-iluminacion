@@ -190,20 +190,13 @@ body {
   color: rgb(0, 43, 80);
   font-size: 1.25rem;
   font-weight: 500;
-  width: 50vw;
+  width: 100vw;
   margin: 5rem 0;
   text-align: justify;
 }
 
-.about-slider {
-  padding: 3rem 0;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
 .about {
-  width: 50vw;
+  width: 100vw;
 }
 
 @media screen and (max-width: 1000px) {
@@ -226,11 +219,6 @@ body {
     padding: 0.5rem;
   }
 
-  .about-slider {
-    padding: 5rem 0;
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media screen and (max-width: 750px) {
