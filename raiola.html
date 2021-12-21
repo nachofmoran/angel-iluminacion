@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Página alojada en Raiola Networks</title>
+	<meta name="robots" content="noindex,nofollow" />
+
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<style>
+		*{
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		    -webkit-transition: all 250ms ease-in-out;
+			-moz-transition: all 250ms ease-in-out;
+			-ms-transition: all 250ms ease-in-out;
+			-o-transition: all 250ms ease-in-out;
+			transition: all 250ms ease-in-out;
+		}
+
+		body{
+			font-family: 'Roboto', sans-serif;
+			background-color: #F7FBFE;
+			color: #000;
+			padding: 0;
+			margin: 0;
+		}
+
+		img{
+			width: 100%;
+		}
+
+		p{
+			line-height: 1.4em;
+			margin: 0;
+			font-weight: 300;
+		}
+
+		a{
+			text-decoration: none;
+			color: #0F81C8;
+		}
+
+		a:hover{
+			text-decoration: underline;
+		}
+
+		.elemento{
+			cursor: pointer;
+		}
+
+		.titulo{
+			font-size: 1.6em;
+			line-height: 1.3em;
+			font-weight: 400;
+		}
+
+		.logo{
+			width: 100%;
+			max-width: 250px;
+		}
+
+		.color-azul{color: #107CC4;}
+		.sombra-texto{text-shadow: 0px 3px 6px #00000029;}
+		.texto-normal{font-style: normal;}
+		.bold{font-weight: bold;}
+		.bg-blanco{background-color: #fff;}
+		.bg-azul{background-color: #1082C9;}
+
+		.contenedor{
+			width: 100%;
+			max-width: 1140px;
+			margin: auto;
+			padding: 80px 30px;
+		}
+
+		.fila-superior{
+			display: grid;
+			grid-template-columns: 50% 50%;
+			grid-template-rows: 1fr;
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+		}
+
+			.col-izquierda{
+				display: flex;
+			    flex-flow: column;
+			    justify-content: space-between;
+			}
+
+			.col-derecha{
+				padding-left: 40px;
+			}
+
+		.mensaje{
+			font-size: 1em;
+    		line-height: 1.5em;
+			font-weight: 300;
+			font-style: italic;
+		}
+
+		.post-mensaje{
+			font-size: 1.7em;
+			font-weight: normal;
+		}
+
+		.texto-admin{
+			font-weight: 400;
+			font-size: 0.9em;
+		}
+
+		.texto-admin .elemento{
+			color: #0F81C8;
+		}
+
+		.texto-admin .elemento:hover{
+			text-decoration: underline;
+		}
+
+		.fila-cajas{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			grid-column-gap: 40px;
+			grid-row-gap: 0px;
+			margin: 50px 0;
+		}
+
+		.item-cajas, .cajas{
+			background-color: #F7FBFE;
+			box-shadow: 0px 3px 6px #00000029;
+			text-align: center;
+			padding: 30px 20px;
+		}
+
+		.cajas{
+			margin-top: 30px;
+			border: 4px solid transparent;
+			display: none;
+		}
+
+			.cajas .elemento{
+				display: inline-block;
+    			min-width: 160px;
+				color: #1082C9;
+				font-size: 1.2em;
+				font-weight: 300;
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			.cajas .elemento:not(:last-child){
+				margin-bottom: 12px;
+			}
+
+			.cajas .elemento:hover{
+				text-decoration: none;
+			}
+
+		.cajas:hover{
+			border: 4px solid #1082C9;
+		}
+
+			.item-cajas .titulo{
+				color: #1082C9;
+				margin: 0;
+			}
+
+			.item-cajas img{
+				height: 45px;
+				margin-bottom: 10px;
+			}
+
+		.item-cajas:hover{
+			background-color: #1082C9;
+		}
+
+			.item-cajas:hover .titulo{
+				color: #fff;
+			}
+
+		.fila-footer{
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+			display: grid;
+			grid-template-columns: repeat(4, 30px);
+			grid-template-rows: 1fr;
+			grid-column-gap: 10px;
+			grid-row-gap: 0px;
+			justify-content: center;
+		}
+
+		.fila-footer .elemento img{
+			height: 25px;
+			-webkit-filter: brightness(0) invert(1);
+			filter: brightness(0) invert(1);
+		}
+
+		.fila-footer .elemento img:hover{
+			opacity: .8;
+		}
+
+		@media screen and (max-width: 1024px){
+			.titulo, .post-mensaje{
+				font-size: 1.5em;
+			}
+		}
+
+		@media screen and (max-width: 768px){
+			.fila-superior{
+				grid-template-columns: 100%;
+				padding: 40px 20px!important;
+				text-align: center;
+			}
+
+			.fila-inferior{
+				grid-template-columns: 100%;
+				padding: 40px 20px!important;
+				text-align: center;
+			}
+
+			.fila-cajas{
+				grid-template-columns: 100%;
+				grid-row-gap: 40px;
+			}
+
+			.titulo, .post-mensaje{
+				font-size: 1.3em;
+			}
+
+			.col-derecha{
+				padding-left: 0px;
+				padding-top: 30px;
+			}
+
+			.col-derecha img{
+				max-width: 400px;
+			}
+
+			.post-mensaje{
+				margin-top: 20px;
+			}
+
+			.cajas .elemento{
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body>
+
+<section>
+	<div class="contenedor fila-superior">
+		<div class="col-izquierda">
+			<div>
+				<img class="logo" src="https://parking.webcloud.es/logo-raiola-networks.svg" alt="Logo de Raiola Networks" />
+				<h1 class="titulo sombra-texto">Esta web aún no está disponible.<br />¡Vuelve dentro de poco!</h1>
+				<p class="mensaje">El sitio web que quieres visitar está alojado en un hosting de <span class="color-azul texto-normal bold">Raiola Networks</span>. Sin embargo, el administrador de la web aún está trabajando en ella, por lo que aún no está publicada.</p>
+			</div>
+		</div>
+
+		<div class="col-derecha">
+			<img src="https://parking.webcloud.es/img-astronauta.png" alt="Imagen de astronauta" />
+		</div>
+	</div>
+</section>
+
+<script src="https://parking.webcloud.es/parte-inferior.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".elemento").click(function (event) {
+			if ($(this).attr("data-sitio") !== undefined && $(this).attr("data-sitio") !== false) {
+					window.location.href = unescape(window.atob(decodeURIComponent($(this).attr("data-sitio"))));
+			}
+		});
+
+		$(".item").mouseover(function (event) {
+			$(this).find(".cajas").fadeIn(300);
+		});
+
+		$(".item").mouseleave(function (event) {
+			$(this).find(".cajas").fadeOut(300);
+		});
+	});
+</script>
+
+</body>
+</html>
