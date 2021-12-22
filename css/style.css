@@ -21,10 +21,10 @@ body {
 }
 
 .container {
-  max-width: 960px;
-  margin: auto;
+  max-width: 75vw;
+  margin: 5vw;
   overflow: hidden;
-  padding: 0 0;/* revisar */
+  /*padding: 0 0; revisar */
 }
 
 .showcase {
@@ -62,10 +62,10 @@ body {
 
 .btn {
   text-decoration: none;
-  padding: 20px 50px;
+  padding: 2vw 5vw;
   font-size: 1.25rem;
   position: relative;
-  margin: 32px;
+  margin: 2vw;
 }
 
 .btn-cita {
@@ -103,6 +103,7 @@ body {
 
 .showcase h1 {
   font-size: 5vw;
+  color: rgb(255, 255, 255);
 }
 
 .showcase p {
@@ -162,11 +163,11 @@ body {
 }
 
 .logo {
-  padding: 0 0 0 00rem;
+  margin: 0 5vw 0 10vw;
 }
 
 .logo img {
-    width: 35vw;
+    width: 20vw;
 }
 
 .dec {
@@ -195,13 +196,22 @@ body {
 }
 
 .subtitle {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 230, 0);
 }
  
+@media screen and (min-width: 1281px){
+  .info img {
+    max-width: 15vw;
+  }
+}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1280px){
+
+}
+
+@media screen and (max-width: 1025px) {
   .showcase {
-    flex-direction: column;
+    /*flex-direction: column;*/
     padding: 2rem;
   }
 
@@ -210,10 +220,14 @@ body {
   }
 
   .showcase h1 {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 
   .showcase h2 {
+    font-size: 2vw;
+  }
+
+  .showcase h3 {
     font-size: 2vw;
   }
 
@@ -230,9 +244,44 @@ body {
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 961px){
+  .showcase {
+    flex-direction: column;
+  }
+
+  .showcase h2 {
+    font-size: 2.5vh;
+  }
+
+  .showcase h3 {
+    font-size: 1.8vh;
+  }
+
+  .logo img {
+    max-width: 20vw;
+  }
+  .subtitle{
+    font-size: 2.5vw;
+  }
+
+  .showcase h3 {
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .showcase h1 {
      font-size: 8vw;
+  }
+
+  .showcase h2 {
+    font-size: 3vh;
+  }
+
+  .showcase h3 {
+    font-size: 2vh;
   }
 
   .services .list {
@@ -248,43 +297,49 @@ body {
   }
 
   .logo img {
-    width: 40vw;
-    min-width: 30vw;
+    margin-top: 5vh;
+    max-width: 35vw;
+    min-width: 20vw;
   }
 }
 
 
 @media screen and (max-width: 480px) {
-  .showcase h1 {
-    /* font-size: 3rem; */
-  }
+  /* .showcase h1 {
+    font-size: 3rem;
+  } */
 
   .showcase h2 {
-    font-size: 1.35rem;
+    font-size: 2.5vh;
+  }
+
+  .showcase h3 {
+    font-size: 2vh;
   }
 
   .logo img {
-    min-width: 50vw;
+    width: 30vw;
   }
 }
 
 @media screen and (max-width: 420px) {
   .logo img {
-    width: 70vw;
+    max-width: 25vw;
+    margin-top: 5vh;
   }
   
-  .showcase h1 {
-    /* font-size: 2.5rem; */
-  }
+  /* .showcase h1 {
+    font-size: 2.5rem;
+  } */
 
-  .showcase h2 {
+  .showcase h3 {
     font-size: 1rem;
   }
 
-  .btn {
+  /* .btn {
 
     font-size: 80%;
-  }
+  } */
 
   .services .list {
     grid-template-columns: repeat(2, auto);
@@ -293,22 +348,15 @@ body {
   }
 }
 
-@media (max-width: 1000px) and (max-height: 800px){
+@media screen and (min-aspect-ratio: 1){
+  .showcase-inner img {
+    display: none;
+  }
+
   .showcase {
     flex-direction: row;
-    padding: 2rem;
-  }
-
-  .showcase h1 {
-    font-size: 4vw;
-  }
-
-  .btn {
-    padding: 10px 30px;
-    font-size: 1rem;
-    position: relative;
-    margin: 16px;
   }
 }
+
 
 
