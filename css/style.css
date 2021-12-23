@@ -24,7 +24,6 @@ body {
   max-width: 75vw;
   margin: 5vw;
   overflow: hidden;
-  /*padding: 0 0; revisar */
 }
 
 .showcase {
@@ -301,6 +300,11 @@ body {
     max-width: 35vw;
     min-width: 20vw;
   }
+
+  .about p {
+    width: 85vw;
+    font-size: 1rem;
+  }
 }
 
 
@@ -319,6 +323,12 @@ body {
 
   .logo img {
     width: 30vw;
+  }
+
+  .about p {
+    width: 90vw;
+    font-size: 1rem;
+    padding: 1rem;
   }
 }
 
@@ -356,6 +366,29 @@ body {
   .showcase {
     flex-direction: row;
   }
+
+}
+
+@media screen and (min-aspect-ratio: 1) and (max-height: 480px){
+  .logo {
+    display: none;
+  }
+
+  /* .logo img {
+    max-width: 20vh;
+    margin-top: 5vh;
+  }
+
+  .showcase {
+    flex-direction: row;
+  } */
+}
+
+@media screen and (max-aspect-ratio: 1) and (max-width: 600px){
+  .logo img{
+    
+  }
+
 }
 
 
