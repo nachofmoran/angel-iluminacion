@@ -441,7 +441,7 @@ body {
 
 @media screen and (max-height: 480px){
   .showcase{
-    padding-top: 5vh;
+    padding: 5vh;
   }
 
   .showcase h1 {
@@ -456,9 +456,10 @@ body {
     font-size: 4vh;
   }
 
-  /* .btn {
-
-  } */
+  .btn {
+    padding: 2vh;
+    font-size: 6vh;
+  } 
 
   .container {
     margin: 0;
