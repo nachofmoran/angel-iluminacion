@@ -266,7 +266,6 @@ body {
 
 @media screen and (max-width: 1025px) {
   .showcase {
-    /*flex-direction: column;*/
     padding: 2rem;
   }
 
@@ -369,10 +368,7 @@ body {
 
 
 @media screen and (max-width: 480px) {
-  /* .showcase h1 {
-    font-size: 3rem;
-  } */
-
+  
   .showcase h2 {
     font-size: 2.5vh;
   }
@@ -398,18 +394,9 @@ body {
     margin-top: 5vh;
   }
   
-  /* .showcase h1 {
-    font-size: 2.5rem;
-  } */
-
   .showcase h3 {
     font-size: 1rem;
   }
-
-  /* .btn {
-
-    font-size: 80%;
-  } */
 
   .services .list {
     grid-template-columns: repeat(2, auto);
@@ -419,7 +406,7 @@ body {
   }
 }
 
-@media screen and (min-aspect-ratio: 1){
+/* @media screen and (min-aspect-ratio: 1){
   .showcase-inner img {
     display: none;
   }
@@ -431,13 +418,14 @@ body {
             flex-direction: row;
   }
 
-}
-
-/* @media screen and (min-aspect-ratio: 1) and (max-height: 480px){
-  .logo {
-    display: none;
-  }
 } */
+
+@media screen and (max-height: 650px){
+  .showcase {
+    padding: 1vh;
+  }
+  
+}
 
 @media screen and (max-height: 480px){
   .showcase{
@@ -468,11 +456,9 @@ body {
   .logo {
     display: none;
   }
-
-  .works {
-    background-color: rgb(187, 7, 7);
-  }
 } 
+
+
 
 
 
